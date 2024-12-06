@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    
+    <script>
+        let data = prompt("Enter your email:");
+        // let data= "nithish@yahoo.com";
+        let check = data.search("@");
+        console.log(check);
+        let check1 = data.slice(check);
+        console.log(check1);
+        if(check1=="@gmail.com"||check1=="@hotmail.com"||check1=="@yahoo.com"||check1=="@changepond.com"){
+            document.write("Your email is supported");
+        }
+        else{
+            document.write("Your email is not supported");
+        }
+    </script>
+</body>
+</html>

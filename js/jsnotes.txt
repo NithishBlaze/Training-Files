@@ -1,0 +1,210 @@
+28/11/2024
+
+javascript:
+    -it is used to functionalites and actions into web applications
+    -it is interpreter language
+    -it is loosely typed language
+    -javascript is a case sensitive language
+
+    why javascript is loosely typed language?
+        -because when we create a variable in javascript we cannotdetermine what type of data it contain until or unless the variableis initialized 
+        -in javascript variablewe can store multiple type of data in it that's why it is called as loosely typed language. 
+
+how to use javascript
+    -there are two ways to use javascript
+     1.internal javascript: in html we use script tag and in that we wite js code.
+     2.external javascript: in this we create a seperate js file and import that js file and import that js file in html file by using script tag
+
+hot to get output in javascript
+
+    1.document.write(): it will display output in html page
+    2.window.alert(): it will display output in model popup window
+    3.console.log(): it will display output in browser control or in terminal
+    4.innerHTML(DOM): it will display output inside an element
+
+
+
+    ----------------------------------------------------------------------------------------------------------------
+
+
+ 29/11/2024
+
+Hoisting: moving variable declaration to the top of webpage
+
+Variable : it is used to store data in it.
+            -we can create variable in javascript by using var, let, const
+
+var : it create function scope variable
+    - we can use variable before its declaration
+    - we can re-declare variable
+
+var mydata; //var declaration
+var mydata="changepond"; //variable initialization
+var mydata= "Nithish"; defining variable
+
+let : it create block scope variable
+    - we cannot use variable before its declaration
+    - we canot redeclare the variable
+
+const: it create a block scope variable
+    -we cannot use variable before its declaration
+    -in this when we declare a variable at same time we have initialize it.
+    -the data will never change on runtime
+
+datatype in javascript
+
+1.Number
+    let no1=231, no2=0.5, no3=987654321;
+2.String
+    str1="Hello";
+3.Boolean
+    cond1=true, cond2= false;
+4.Null
+    let data=null;
+5.Undefine
+    let city;
+
+userDefined datatype
+
+6.Array
+    let std= ["Nithish","Kumar","Blaze"];
+7. objectDatatype
+    let emp= {id:101,name:"Nithish",post:"JavaDeveloper"};
+
+use of exponentiation (**): it return power of any Number
+
+    console.log(2*2*2*2);
+    console.log(2**2);
+    console.log(2**3);
+
+
+equalTo (==) :
+    - it check value only and if both are same then it will true value
+    5 == 5 //true
+    5 == '5' //true
+exactlyEqualTo (===)
+    - it will check value as well as its dataType and if both are same it returns true value
+    5 === 5 //true
+    5 === '5' //false
+
+
+DOM manipulation
+
+function : it is a block od code which is used to perform specific task
+    -it will execute when we call the function
+    - function can be reused
+
+    1.preDefinedFunctions
+        -provided by javascript
+    2.userDefinedFunctions
+        -user developed for particular use
+
+Syntax:
+    function function_name(){
+        //statement
+    }
+
+    to call the function
+
+    function_name();
+
+parametrized function
+
+    function function_name(parameter1, parameter2){
+        return parameter1 + parameter2
+    }
+
+anonymous function //function without a name
+
+    let multiply = function(num1,num2){
+        return num1*num2 + "<br>";
+    };
+     document.write(multiply(1,2))
+
+arrow function: function which has no name as well as no function keyword
+
+    let div = (num1,num2) => {
+        return num1/num2 + "<br>"
+    }
+
+    let div = (num1,num2) => num1/num2 + "<br>"
+    
+    document.write(div(num1,num2));
+
+optional parameterized function: function in which parameter will be optional
+
+    let fullName = (fname,lname,mname="") =>  fname+mname+lname+ "<br>";
+
+    document.write(fullName("Nithish","Kumar"));
+    document.write(fullName("Nithish","Kumar",".R"));
+
+rest parameterized function: when we don't know how many parameters required. so we use spread operator (...)
+
+    let stdList = (...std) =>  std;
+
+        document.write(stdList("Nithish","Kumar", "Blaze", "NithishBlaze"));
+
+
+Array
+
+    pop is used to remove elements in Array
+    push is used to insert elements into the last of Array
+    unshift is used to insert element in first of Array
+
+
+
+Object : -it is used to store multiple values with different data type
+         -in object data store in key and valued paired format
+         -we can access object data outside of by writting object.keyName.
+         -object type of data can be denoted by {}
+
+
+callback function: passing a function name as an argument inside another function is called callback function
+
+
+Date and Time in javascript:
+    - if we want to display date and time in javascript first  
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+02/12/2024
+
+String and its method:
+
+string: it is a collection of character
+        -in string every character has index value and it start from zero
+        - in string blank space is also considered as string
+
+ -there are three method which index of serching string
+        -indexof(searchingString, startIndex?): 
+            - it will search string from left to right and index of first occurences of string
+            - it searching string is not found then return -1 as result
+
+        -lastIndexOf(searchingString, startIndex?):
+            - it will search string from right to left and index of first occurences of string
+            - it searching string is not found then return -1 as result
+
+        -search(searchingString)
+            - it will search string from left to right and index of first occurences of string
+            - it searching string is not found then return -1 as result
+            - it is faster than indexOf method
+
+-there are three methods that returns searching string
+        -slice(startIndex,endIndex?):
+            -it will return part of string from big string
+            -if we write +ve index then it will search from left to right 
+            -if we write -ve index then it will search from right to left
+        -substring(startIndex,endIndex?):
+            -it will return part of string from big string
+            -if we write +ve index then it will search from left to right            
+        -substr(startIndex,totalNumberOfCharacter);
+            -it will return part of string from big string
+            -if we write +ve index then will search index from left to right
+
+-charAt

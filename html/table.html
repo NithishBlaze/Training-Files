@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h2>Table</h2>
+    <table border="">
+        <thead>
+            <tr>
+                <th>Emp.No</th>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Nithish</td>
+                <td>Fullstack Developer</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Blaze</td>
+                <td>Java Developer</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>NithishBlaze</td>
+                <td>Python Developer</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Table with rowspan</h2>
+    <table border="">
+        <thead>
+            <tr>
+                <th>Emp.No</th>
+                <th>Name</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">01</td>
+                <td rowspan="2">Nithish</td>
+                <td>Fullstack Developer</td>
+            </tr>
+            <tr>
+                <td>Java Developer</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h2>Table with colspan</h2>
+    <table border="">
+        <thead>
+            <tr>
+                <th>emp.No</th>
+                <th colspan="2">Name & Role</th>
+                <th>Phone NO.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td colspan="2">Nithish </td>
+                    <td>112233</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td colspan="2">Blaze</td>
+                    <td>112233</td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td colspan="2">NithishBlaze</td>
+                    <td>112233</td>
+                </tr>
+            </tbody>
+        </tbody>
+    </table>
+</body>
+</html>

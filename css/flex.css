@@ -1,0 +1,46 @@
+.logo {
+    height: 113px;
+    width: 113.5px;
+    border-radius: 50%;
+    border: 2px solid red;
+    box-shadow: 8px 0px 5px grey;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: xx-large;
+    margin-left: 15px;
+    
+}
+header{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0px;
+}
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.child1{
+    border: 1px solid yellow;
+    height: 85px;
+    width: 85px;
+}
+.child1 img{
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:576px){
+header{
+    display: grid;
+ }   
+}

@@ -1,0 +1,74 @@
+27/11/2024
+
+
+css: its is used to design webapp and to make it responsive.
+        -css stands for cascading style sheet
+        -latest version is css3
+
+Q. What are the uses of css
+Q. how to use css
+    -there are three ways to use css
+    1. inline css: inside a starting tag we use style attribute and in that we add property and value
+    2. internal css: in html file we use style tag and in that we select element apply css property
+            syntax: selector{
+                property:value;
+                property:value;
+                property:value;
+            }
+    3. external css: in this we create a seperate css file and inport that css in html file head part 
+            syntax: selector{
+                property:value;
+                property:value;
+                property:value;
+            }
+
+selector in css : selecting an element
+1. element or tag name selector : in this we use element or tag name to apply css property
+2. group selector : we make group selector to apply css property
+3. id selector (#): you have to apply css property in single element in that case we use it
+4. class selector (.) : you have to apply bunch of css property to specific element in that case we use it
+5. universal selector (*) : we have to apply all css property to all element available in html page
+
+
+border: a line drawn around an element
+
+box-model: it contain four point
+    1. content : it can be any image or text
+    2. padding : it is used to clear area between content and element border
+    3. border : a line drawn around an element
+    4. margin : it is used to clear area outside of the element border
+
+position:
+    -it is used to move element after applying left, right, top, and bottom property value.
+    -by default every element has position:static;
+    1. position:static;(default)
+    2. position:relative; element will move from left, right, top and bottom side 
+    3. position:absolute; when we want to move child element according to its parent element
+    4. position:fixed; when we have to fixed on screen window
+    5. position:sticky; when we have to stick element on screen window
+
+Media Query: it is used to apply different style rule to an element according to different screen width
+
+syntax:  @media screen and (screen-width){
+    css code
+}
+
+device screen-width >=1200px  xl screen
+device screen-width >=992px  lg screen
+device screen-width >=768px  md screen
+device screen-width >=576px  sm screen
+device screen-width <576px  xsm screen
+
+screen width
+1. max-width: css property will applicable from its minimum width to its max-width not abve to it;
+2. min-width: css property will be applicable from its minimum width to above width
+
+float
+    -it is used to move block element side by side
+    -it has three values left, right, none
+
+overflow
+    -it is used to fit big content into small box
+    -overflow:visible; is default
+    overflow:hidden; //content going outside will hidden
+    overflow:

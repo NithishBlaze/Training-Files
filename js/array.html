@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let students = ["nithish","kumar","nithishblaze","blaze"];
+        console.log(students);
+        console.log(students[2]);
+        for(let i=0;i<students.length;i++){
+            document.write(students[i]+" ");
+        }
+        document.write("<br>");
+        for(let s of students){
+            document.write(s+" ");
+        }
+        students.push("xxx");
+        console.log(students);
+        students.pop();
+        console.log(students);
+        students.unshift("Nithishz,blazxe");
+        console.log(students);
+        students.shift("Nithishz,blazxe");
+        console.log(students);
+        students.splice(2,0,"Nithishz","zblazex");
+        console.log(students);
+        students.splice(2,2);
+        console.log(students);
+
+        console.log(students.toString());
+
+        console.log(students.join());
+        console.log(students.join("-"));
+        console.log(students.join("#"));
+        </script>
+</body>
+</html>

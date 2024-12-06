@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <div>
+        <label for="uname">Enter your name:</label>
+        <input type="text" name="fname" id="uname" pattern="^[a-zA-Z]{2,20}$" placeholder="name" required>
+    </div>
+    <div>
+        <label for="upass">Enter your password:</label>
+        <input type="password" name="password" id="upass" required>
+    </div>
+    <div>
+        <label for="umail">Enter your mail:</label>
+        <input type="email" name="mail" id="umail" required>
+    </div>
+    <div>
+        <label for="ucontact">Enter your mobile number:</label>
+        <input type="tel" name="contact" id="ucontact" pattern="^[0-9]{9,11}$" required >
+    </div>
+    <div>
+        <label>Select your gender</label>
+        <input type="radio" name="gender" value="Male" checked>Male
+        <input type="radio" name="gender" value="Female">Female
+    </div>
+    <div>
+        <label for="udob">Select you Date of Birth:</label>
+        <input type="date" name="dob" id="udob">
+    </div>
+    <div>
+        <label for="ucourse">Select your course:</label>
+        <select multiple name="course" id="ucourse">
+            <option value="java">Java</option>
+            <option value="Python">Python</option>
+            <option value=".NET">.NET</option>
+            <option value="react">React</option>
+        </select>
+    </div>
+    <div>
+        <label for="uqualification">Select your Qualification:</label>
+        <input type="checkbox" name="course" id="uqualification" value="sslc">SSLC
+        <input type="checkbox" name="course" id="uqualification" value="hsc">HSC
+        <input type="checkbox" name="course" id="uqualification" value="ug">UG
+        <input type="checkbox" name="course" id="uqualification" value="pg">PG
+    </div>
+    <div>
+        <label for="ufees">Fees:</label>
+        <input type="text" name="fees" id="ufees" value="10000" readonly>
+    </div>
+    <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

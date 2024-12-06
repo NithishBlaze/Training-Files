@@ -1,0 +1,50 @@
+02/12/2024
+
+Typescript:
+    -it is super set of javascript
+    -it is complie language
+    -it is strictly typed language
+    
+how to execute:
+    tsc fileName.ts // complie ts to js
+    node fileName.js // to execute
+
+oops:
+    -classes:
+        -it is a collection of data-member and member function
+        -it is template which we can re-use
+        -to create class we use class keyword
+
+    this: it refers to current class or object to access its data inside it only
+object:  
+        -it is an instance of class
+        -it allows us to access class data member and member function outside class
+
+        syntax: let objName = new className();
+
+constructor:
+        -it is special member function of class
+        -it will execute automatically when classs object get created or initialize
+        -in ts construction name must be constructor
+--------------------------------------------------------------------------------------------------------------------
+
+3/12/2024
+
+Inheritance :
+        -accessing 
+
+
+
+
+
+
+
+
+
+
+Interface:
+    - it is signature of a class
+    - it contain abstract method
+    - to create interface we use interface keyword
+    - its child class has responsibility to implement it.
+    - to implement 

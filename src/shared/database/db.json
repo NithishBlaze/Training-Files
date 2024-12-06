@@ -1,0 +1,50 @@
+{
+  "products": [
+    {
+      "id": "103",
+      "pname": "Processor",
+      "pprice": "15000",
+      "pcompany": "Intel",
+      "pquantity": "50"
+    },
+    {
+      "id": "104",
+      "pname": "Keyboard",
+      "pprice": "1500",
+      "pcompany": "HP",
+      "pquantity": "50"
+    },
+    {
+      "id": "105",
+      "pname": "Printer",
+      "pprice": "7000",
+      "pcompany": "Canon",
+      "pquantity": "50"
+    },
+    {
+      "id": "08e3",
+      "pname": "USB",
+      "pprice": "1500",
+      "pcomany": "",
+      "pquantity": "15000",
+      "pcompany": "Zebronics"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userid": "admin@gmail.com",
+      "userpass": "admin@123"
+    },
+    {
+      "id": "2",
+      "userid": "super@gmail.com",
+      "userpass": "super@123"
+    },
+    {
+      "id": "3",
+      "userid": "mass@gmail.com",
+      "userpass": "mass@123"
+    }
+  ]
+}

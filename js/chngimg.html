@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>changeImage</title>
+</head>
+<body>
+    <img src="../assets/images/onepieceLogo.jpg" alt="Onepiece" id="im1"><br>
+    <button type="button" onclick="change()">toggle</button>
+
+    <script>
+        function change(){
+            document.getElementById("im1").src = "../assets/images/zoro.jpg";
+            document.getElementById("im1").alt = "zoro";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+28/11/2024
+
+Bootstrap:
+    -it is html, css and javascript framework
+    -it makes webapp attractive, responsive and mobile friendly
+    -it provide inbuilt class
+    -latest version of bootstrap is bootstrap5
+
+
+there are two ways to use bootstrap
+    1. by using CDN(Content Delivery Network)
+    2. By downloading
+
+
+Official Website
+ getbootstrap.com 

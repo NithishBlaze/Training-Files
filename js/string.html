@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    
+
+    <script>
+        let msg = "Konichiwa !!";
+        let msg1 = "Bankai ! KATEN KYOKOTSU KARAMASTU SHINJU "
+        document.write(`${msg}<br>`);
+        document.write(`${msg.length}<br>`);
+        document.write(`${msg.toUpperCase()} <br>`);
+        document.write(`${msg.toLowerCase()} <br>`);
+        //use of indexOf method
+         document.write(`${msg.indexOf("i")} <br>`);
+        document.write(`${msg.indexOf("i",5)} <br>`);
+        //use of lastindexOf
+        document.write(`${msg.lastIndexOf("i")} <br>`);
+        document.write(`${msg.lastIndexOf("i",5)} <br>`);
+        //use of search()
+        document.write(`${msg.search("i")} <br>`);
+        //use of slice()
+        document.write(`${msg1.slice(15)} <br>`);
+        document.write(`${msg1.slice(15,25)} <br>`);
+        document.write(`${msg1.slice(-17,-7)} <br>`);
+        document.write(`${msg1.slice(15,25)} <br>`);
+        //substring
+        document.write(`${msg.substring(10)}<br>`);
+        document.write(`${msg.substring(10,25)}<br>`);
+        //substr
+        document.write(`${msg.substr(5,10)}<br>`);
+        //charAt
+        document.write(`${msg.charAt(0)} <br>`);
+        //replace
+        document.write(`${msg1.replace('Bankai','india')}<br>`);
+        document.write(`${msg1.replace('/changepond/i','india')}<br>`);
+        document.write(`${msg1.replace('/changepond/ig','india')}<br>`);
+        document.write(`${msg1.replaceall('changepond','india')}<br>`);
+        document.write(`${msg1} <br>`);
+        
+    </script>
+</body>
+</html>

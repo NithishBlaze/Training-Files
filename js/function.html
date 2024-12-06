@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+
+    <script>
+        function greeting(){
+            return "NithishKumar";
+        }
+        document.write(greeting(),"<br>" );
+        let data = greeting();
+
+        document.write(data,"<br>");
+
+        function add(num1,num2){
+            return num1+num2;
+        }
+
+        document.write(add(69,69),"<br>");
+        document.write(add(9,99),"<br>");
+
+        //ANONYMOUS 
+        let mul = function(num1,num2){
+            return num1*num2 + "<br>";
+        }
+
+        document.write(mul(7,7));
+
+        //ARROW
+
+        let div = (num1,num2) => num1/num2 + "<br>" ;
+        document.write(div(50,5));
+
+        //OPTIONAL
+
+        let fullName = (fname,lname,mname="") => fname+mname+lname+ "<br>";
+
+        document.write(fullName("Nithish","Kumar"));
+        document.write(fullName("Nithish","Kumar",".R"));
+
+        //REST
+
+        let stdList = (...std) =>  std;
+
+        document.write(stdList("Nithish","Kumar", "Blaze", "NithishBlaze"));
+
+    </script>
+</body>
+</html>
