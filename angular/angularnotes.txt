@@ -1,0 +1,193 @@
+ng --version
+npm install -g @angular/cli
+ng new projectname // create new angular projectname
+
+npx ng serve // run angular project
+npx ng s -o
+
+
+================================================================================
+
+Day 12 -  11/12/2024
+
+*Angular : 
+            -it is a javascript framework
+            -it provide designing and development platform for creating single page application
+            -latest version is 18
+            -angular is developed and maintain by google
+
+
+S/W : required : 
+    - node.js : node --version
+    - ts : tsc -v
+    - angular : ng --version
+
+
+-angular work on component
+-component : it is a partial part of angular project
+             -it contain code for angular project
+             -it can be any part of project
+
+    -in angular root component name is app 
+
+
+*how to create component in angular
+ng generate component componentName
+ng g c componentName
+
+-when we create component in angular it generate four file
+ html , css , ts , spec.ts 
+
+ how to get output of individual component
+    -go to component ts file and copy its selector name and write as tag where you want
+
+data binding
+    -getting or accessing data from one file to another file in same component
+        1.interpolation {{}}: in this send data from ts sile => html file
+        2.property binding [] : in this we set sttribute(property) values ts=>html
+        3.event binding (): in this we send data from html => ts file
+        4.two-way databinding [()] = in this we can send data from ts <=> html 
+            -to perform two-way databinding we have ngModel directory but ngModel directive is not part of core angular module it is part of formsModule, for this first we have to importformsModule in component.ts file in import array
+
+directive Angular
+    -it is used to change apperacnce and behaviour as well as perform DOM manipulation in angular
+    -there are three types of directives in angular
+    1. structural directive:
+        -it is used to perform DOM manipulation in angular
+        - structural directive denoted by *
+        -structural directives are *ngIf, *ngFor , *ngSwitchCase
+        -we can apply onde directive at a time to single element
+        -it is part of common module, for this first we have to import common in component
+
+    ng-template: display out on the basis of condition
+    -to create reference variable in angular we use #
+
+    2. attribute directive: it is used to chane appearence and behaviour of DOM 
+        -ngStyle: it is used to apply CSS style property on the basis of condition
+        -ngClass: it is used to apply CSS class on the basis of condition
+        -ngModel: it is used to to perform two-way data binding
+
+    3. custom directive : directive created by developer
+
+
+
+<div [ngSwitch]="myCourse">
+    <div *ngSwitchCase="'React'">You have selected React</div>
+    <div *ngSwitchCase="'Angular'">You have selected Angular</div>
+    <div *ngSwitchCase="'DotNet'">You have selected Dotnet</div>
+</div>
+
+"myCourse" => inside only  " ? " is called as variable
+
+"'React'" , "'Angular'" , "'DotNet'" => inside " ' ? ' " tells that it is a value
+
+
+component interaction : 
+    accessing data from parent component to child component
+
+    -input() decorator : it is use to send data from parent to child component
+    -output() decorator  : it is use to send data from child to parent component
+
+
+*pipes : 
+    -it is use to transform  property value without changing its original value 
+    -it is denoted by | sign 
+    -there are 3 types of pipes in angular
+        1. inbuilt pipes  : pipe created by developer
+        2. custom pipes : pipe create by developer for particular use
+        3. thirdparty pipes : pipes already developed by third party vendor , first we have to install it and then use it.
+
+
+# how to use bootstrap in angular
+
+step-1  npm i bootstrap
+step-2 : go to angular.json file and in its style array import its path
+step-3 : restart angular project
+
+layout foldernav,pagenotfound,maindashboard,footer,login
+-  ng g c layout/nav
+
+form folder-angform,utdf,rtf
+ ng g c forms/utdf
+
+
+
+
+# routing in angular:
+ - navigation of component
+ - to display component output or navigating component by using routing in angular for it we write code in app.routes.ts file
+
+
+ - in angular all routing component will display its output below <router-outlet>
+
+ 1. naming routing:
+ 2. default routing:
+ 3. re-direct routing:
+ 4. parameterize routing:
+ 5. child routing:
+ 6. wild-card routing
+
+---------------------------------------------------------------------------------------------------
+12/12/2024
+
+how to navigate in angular
+    to perform component navigating we have to use routerlink property with anchor tag, but first we have to import RouterLink in component ts file from "@angular/router" library
+
+Angular form    
+    there are two types:
+        1.UTDF(User Template Deriven Form)
+            -when we have to create simple form validation in that case we use it.
+            -to perform validation we have to use ngModel directory with input element
+            -in this ngForm directory will hold datta of all inoput element in it
+            -form validation code reside on html file
+
+        2.RTF(Reactive Template Form)
+            -when we have to write complex logic to perform form validation in that case we use it.
+            -form validation code reside on ts file
+            -to use form validation we need to import ReactiveFormModule from FormsModule in component
+            -in this we use mainly two classes 
+                1.FormGroup
+                    -it will hold information of all input element
+                2.FormControl
+                    -it will hold information of individual input element
+
+Service in Angular:
+    -in angular service is special class with extra power
+    -it is used for multiple uses
+        1.to share data with multiple component
+        2.we can in=mplement business logic in it
+        3.we can perform external communication(database connection)
+how to create a service 
+    ng g service shared/services/itemservice
+
+how to access data from service into angular component
+    -if you want to service data into angular for this we have to import service in componenet ts file and create instance of class
+
+how to make API request from angular to server
+    -to send request from angular service to server for this we have create instance of HTTPclient class in service , but HTTPclient class is not part of core angular it is part of HttpClientModule , so first we have to import HttpClientModule module.
+
+ng g c CRUD/productDash
+ng g c CRUD/productAdd
+ng g c CRUD/productEdit
+
+
+guard: in angular guard is used to prevent rendering of routing component
+        -it return boolean value either true or false
+        -
+
+how to generate guard
+    ng g guard guard_name   
+    ng g guard shared/custguard/auth
+
+
+login module
+
+how to create build of angular project
+    ng build
+    ng build --configuration production
+
+
+install http-server
+1. npm install -g angular-http-server
+2. go to dist folder
+3. angular-http-server

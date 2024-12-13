@@ -1,0 +1,27 @@
+<p>mypipes works!</p>
+<div> {{message }} </div>
+<!-- string pipes -->
+ <div> {{message | uppercase}} </div>
+ <div> {{message | lowercase}} </div>
+ <div> {{message | titlecase}} </div>
+ <div> {{message | slice:3}} </div>
+ <div> {{message | slice:3:5}} </div>
+ <div> {{emp | json}} </div>
+ <div> {{message | uppercase}} </div>
+ <!-- number pipe -->
+ <div>{{0.567|number}}</div>
+ <div>{{0.567|number:'3.3-5'}}</div>
+ <div>{{0.567|number:'3.4-5'}}</div>
+ <div>{{0.567|number:'3.1-2'}}</div>
+ <!-- currency -->
+ <div>{{100|currency}}</div>
+ <div>{{100|currency:'GBP'}}</div>
+ <div>{{100|currency:'INR'}}</div>
+ <!-- date -->
+  <div>{{dateObj}}</div>
+  <div>{{dateObj | date}}</div>
+  <div>{{dateObj | date:'shortDate'}}</div>
+  <div>{{dateObj | date:'longDate'}}</div>
+<!-- custom pipe -->
+    <div> {{5 | cube}} </div>
+    <div> {{5 | square}} </div>

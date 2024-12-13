@@ -1,0 +1,16 @@
+<!-- <p>login works!</p> -->
+<div class="layout">
+    <div class="border border-success border-5 rounded p-5">
+        <div>
+            <label for="uname" class="form-label">UserName:</label>
+            <input type="text" name="name" id="uname" class="form-control" [(ngModel)]="uid">
+        </div>
+        <div>
+            <label for="upass" class="form-label">Password:</label>
+            <input type="password" name="upassword" id="upass" class="form-control" [(ngModel)]="upass">&nbsp;
+        </div>
+        <div class="d-grid gap-2"> 
+            <button type="button" class="btn btn-success " (click)="checkUser()">LOGIN</button>
+        </div>
+    </div>
+</div>
