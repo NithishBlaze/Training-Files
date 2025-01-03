@@ -1,0 +1,110 @@
+ ==================================================================================
+Day-1:
+
+Create a table customers 
+
+
+create table customers(
+ id integer primary key,firstname varchar(50) not null,
+ lastname varchar(50),
+ email varchar(255) not null,
+ birthday date not null);
+
+select first_name||' '||last_name as fullname from customer;
+select now(); - to find current time and date;
+select first_name,last_name,email from customer order by first_name desc;
+select first_name,last_name,email from customer order by last_name;
+select first_name,length(first_name) as length from customer;
+select first_name,length(first_name) as length from customer order by len desc;
+
+
+create table sort_demo_nulls(num int);
+insert into sort_demo_nulls values(1),(2),(null),(3),(4),(null);
+
+
+To show the null value in table retrieving we use:
+
+\pset null null 
+
+
+select * from sort_demo_nulls order by num;
+select * from sort_demo_nulls order by num nulls first;
+select * from sort_demo_nulls order by num desc nulls last;
+
+
+select * from actor;
+select distinct category_id from film_category;
+select count(*) from film_category;
+select distinct rental_rate from film;
+
+
+select c.customer_id, c.first_name,
+c.last_name, p.amount, p.payment_date
+from customer c inner join payment p
+on c.customer_id = p.customer_id
+order by payment_date
+limit 5;
+
+select c.customer_id,
+c.first_name || ' ' || c.last_name as "customer name",
+s.first_name || ' ' || s.last_name as "staff name",
+p.amount,
+p.payment_date 
+from customer c inner join payment p
+on c.customer_id = p.customer_id
+inner join staff s using (staff_id)
+order by payment_date;
+
+select f.film_id, f.title,
+i.inventory_id
+from film f left join inventory i
+on f.film_id = i.film_id
+where i.inventory_id is null
+order by title
+limit 10;
+
+select f.film_id, f.title,
+i.inventory_id
+from film f right join inventory i
+on f.film_id = i.film_id
+where f.film_id is null
+order by title
+limit 10;
+
+
+
+
+select f1.title,f2.title,f1.length from film f1 join film f2 on f1.length=f2.length
+
+select customer_id,count(customer_id) as total,sum(amount) as total_pay
+from payment
+where payment_date> '2007-02-16'
+group by customer_id
+having sum(amount)>100
+order by total_pay;
+
+select c.customer_id,
+c.first_name || ' '||c.last_name as customername,count(c.customer_id) as total_ord,
+sum(p.amount) as total_pay from payment p join customer c
+on c.customer_id=p.customer_id
+where payment_date > '2007-02-16'
+group by c.customer_id
+having sum(amount)>100
+order by total_pay
+limit 10
+offset 5;
+
+
+
+
+
+select 
+
+
+
+
+
+
+
+
+

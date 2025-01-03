@@ -1,0 +1,46 @@
+11/12/2024
+
+ng serve 
+or 
+ng s -o (open in browser automatically)
+
+-to start  angular project
+
+Angular:
+    it is javascript framework
+    it provide designing and development platform for creating single page application
+    latest version of angular is 18
+    angular is developed and maintained by google
+
+S/w pre requist
+    -node js
+    node --version
+
+    -ts
+    tsc -v
+
+    -angular
+    ng --version
+
+    npm -i g @angular/cli
+    ng new angulartproject_name
+
+how to create angular poroject
+
+1. ng new project_name
+2. cd project_name
+3. ng serve or ng S
+4. go to browser url and write localhost:4200
+
+angular work on component
+    component
+        -it is partial part of angular project
+        -it contain code for angular project
+        -it can be any part of project, which we can reuse multiple time
+
+in angular rootComponentname is app
+
+how to create component in angular
+
+    ng generate component component_name
+    ng g c component_name
